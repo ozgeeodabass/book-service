@@ -11,7 +11,7 @@ import jakarta.persistence.Table
 data class Book @JvmOverloads constructor(
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
-    val id: String? = "",
+    val id: String? = null,
     val title: String,
     val bookYear: String,
     val author: String,
